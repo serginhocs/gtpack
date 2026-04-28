@@ -25,7 +25,7 @@ export const About = () => {
           className="lg:col-span-7 lg:pt-6"
         >
           <p className="text-lg md:text-xl text-foreground/80 leading-relaxed">
-            A <span className="text-forest font-medium">Gtpack</span> nasceu da inquietação de ver o mundo
+            A <span className="text-forest font-medium">GTPACK</span> nasceu da inquietação de ver o mundo
             sufocado pelo plástico descartável. Há mais de uma década transformamos
             fibra de papel em embalagens que cumprem a função, encantam pelo design
             e voltam à terra como adubo.

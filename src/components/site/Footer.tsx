@@ -1,4 +1,4 @@
-import logo from "@/assets/logo-gtpack.jpg";
+import logo from "@/assets/logo-gtpack.png";
 
 export const Footer = () => {
   return (
@@ -7,7 +7,7 @@ export const Footer = () => {
         <div className="grid md:grid-cols-4 gap-12 pb-16 border-b border-primary-foreground/10">
           <div className="md:col-span-2">
             <div className="bg-primary-foreground rounded-xl inline-block p-4">
-              <img src={logo} alt="Gtpack" className="h-10 w-auto" />
+              <img src={logo} alt="GTPACK" className="h-10 w-auto" />
             </div>
             <p className="mt-6 max-w-sm leading-relaxed">
               Embalagens sustentáveis para o fast food. Do hambúrguer ao milkshake,
@@ -35,7 +35,7 @@ export const Footer = () => {
           </div>
         </div>
         <div className="pt-8 flex flex-col md:flex-row justify-between gap-4 text-xs text-primary-foreground/50">
-          <p>© 2026 Gtpack. Todos os direitos reservados.</p>
+          <p>© 2026 GTPACK. Todos os direitos reservados.</p>
           <p>Feito com fibra renovável 🌱</p>
         </div>
       </div>

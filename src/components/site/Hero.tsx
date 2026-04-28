@@ -35,7 +35,7 @@ export const Hero = () => {
             transition={{ duration: 0.7, delay: 0.3 }}
             className="mt-8 text-lg md:text-xl text-muted-foreground max-w-lg leading-relaxed"
           >
-            A Gtpack produz copos de papel, caixas de hambúrguer, embalagens de
+            A GTPACK produz copos de papel, caixas de hambúrguer, embalagens de
             batata frita e wraps para o universo do fast food. Resistência,
             design e zero plástico — do balcão ao delivery.
           </motion.p>
@@ -83,7 +83,7 @@ export const Hero = () => {
           <div className="relative rounded-[2rem] overflow-hidden shadow-elegant">
             <img
               src={heroImg}
-              alt="Copos de papel kraft sustentáveis Gtpack"
+              alt="Copos de papel kraft sustentáveis GTPACK"
               width={1536}
               height={1024}
               className="w-full h-auto object-cover"
