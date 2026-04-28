@@ -3,11 +3,13 @@ import { ArrowUpRight } from "lucide-react";
 import burger from "@/assets/product-burger.jpg";
 import fries from "@/assets/product-fries.jpg";
 import soda from "@/assets/product-soda.jpg";
+import icecream from "@/assets/product-icecream.jpg";
 
 const products = [
   { img: burger, name: "Caixas de hambúrguer", desc: "Linha clamshell e wrap em kraft. Resistente à gordura, mantém o crocante e abre fácil.", tag: "Mais vendido" },
   { img: fries, name: "Embalagens de fritas", desc: "Cones, copos e cestas para batatas, onion rings e nuggets. Vários tamanhos e gramaturas.", tag: "Personalizável" },
   { img: soda, name: "Copos para bebidas", desc: "Copos de papel de 200ml a 700ml com tampa e canudo de papel. Perfeitos para refri, suco e milkshake.", tag: "Combo completo" },
+  { img: icecream, name: "Potes para sorvetes", desc: "Potes de papel para sorvete e açaí, de 120ml a 500ml. Resistentes ao frio e à umidade, com tampa opcional.", tag: "Novo" },
 ];
 
 export const Products = () => {
@@ -26,7 +28,7 @@ export const Products = () => {
           </a>
         </div>
 
-        <div className="grid md:grid-cols-3 gap-6">
+        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
           {products.map((p, i) => (
             <motion.article
               key={p.name}
