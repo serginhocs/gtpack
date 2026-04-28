@@ -15,7 +15,7 @@ export const Hero = () => {
             className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-secondary border border-border text-sm text-forest mb-6"
           >
             <Sprout className="w-4 h-4 text-moss" />
-            <span>100% biodegradável & compostável</span>
+            <span>Embalagens fast food 100% biodegradáveis</span>
           </motion.div>
 
           <motion.h1
@@ -24,9 +24,9 @@ export const Hero = () => {
             transition={{ duration: 0.8, delay: 0.1 }}
             className="font-display text-5xl md:text-7xl lg:text-8xl font-medium leading-[0.95] text-forest text-balance"
           >
-            Embalagens<br />
-            que <em className="italic text-moss">respiram</em><br />
-            com a terra.
+            Fast food<br />
+            sem deixar<br />
+            <em className="italic text-moss">rastro.</em>
           </motion.h1>
 
           <motion.p
@@ -35,9 +35,9 @@ export const Hero = () => {
             transition={{ duration: 0.7, delay: 0.3 }}
             className="mt-8 text-lg md:text-xl text-muted-foreground max-w-lg leading-relaxed"
           >
-            Na Gtpack produzimos copos de papel e embalagens sustentáveis
-            para marcas que pensam no amanhã. Design honesto, materiais nobres,
-            zero plástico.
+            A Gtpack produz copos de papel, caixas de hambúrguer, embalagens de
+            batata frita e wraps para o universo do fast food. Resistência,
+            design e zero plástico — do balcão ao delivery.
           </motion.p>
 
           <motion.div
@@ -62,8 +62,8 @@ export const Hero = () => {
             className="mt-14 grid grid-cols-3 gap-6 max-w-md"
           >
             {[
-              { n: "12M+", l: "Copos produzidos" },
-              { n: "850+", l: "Marcas parceiras" },
+              { n: "12M+", l: "Embalagens/mês" },
+              { n: "850+", l: "Redes parceiras" },
               { n: "0%", l: "Plástico" },
             ].map((s) => (
               <div key={s.l}>
