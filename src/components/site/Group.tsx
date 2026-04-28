@@ -63,7 +63,7 @@ export const Group = () => {
             <img
               src={equipe}
               alt="Equipe do Grupo JB PRINT em frente à sede"
-              className="w-full h-72 object-cover transition-transform duration-700 group-hover:scale-105"
+              className="w-full h-72 object-cover object-bottom transition-transform duration-700 group-hover:scale-105"
             />
             <figcaption className="bg-background p-6 border-t border-border/40">
               <p className="text-forest text-xs uppercase tracking-[0.2em] mb-2">Nosso time</p>
