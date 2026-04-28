@@ -6,8 +6,8 @@ export const Footer = () => {
       <div className="container mx-auto px-6">
         <div className="grid md:grid-cols-4 gap-12 pb-16 border-b border-primary-foreground/10">
           <div className="md:col-span-2">
-            <div className="bg-primary-foreground rounded-xl inline-block p-3">
-              <img src={logo} alt="Gtpack" className="h-8 w-auto" />
+            <div className="bg-primary-foreground rounded-xl inline-block p-4">
+              <img src={logo} alt="Gtpack" className="h-10 w-auto" />
             </div>
             <p className="mt-6 max-w-sm leading-relaxed">
               Embalagens sustentáveis para o fast food. Do hambúrguer ao milkshake,
