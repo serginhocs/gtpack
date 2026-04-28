@@ -20,6 +20,7 @@ export const Footer = () => {
               <li><a href="#" className="hover:text-leaf">Caixas de hambúrguer</a></li>
               <li><a href="#" className="hover:text-leaf">Copos de bebida</a></li>
               <li><a href="#" className="hover:text-leaf">Embalagens de fritas</a></li>
+              <li><a href="#" className="hover:text-leaf">Potes para sorvetes</a></li>
               <li><a href="#" className="hover:text-leaf">Sacolas delivery</a></li>
             </ul>
           </div>
