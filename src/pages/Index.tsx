@@ -6,6 +6,7 @@ import { Products } from "@/components/site/Products";
 import { Sustainability } from "@/components/site/Sustainability";
 import { Process } from "@/components/site/Process";
 import { CTA } from "@/components/site/CTA";
+import { Contact } from "@/components/site/Contact";
 import { Footer } from "@/components/site/Footer";
 
 const Index = () => {
@@ -19,6 +20,7 @@ const Index = () => {
       <Sustainability />
       <Process />
       <CTA />
+      <Contact />
       <Footer />
     </main>
   );
