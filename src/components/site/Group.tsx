@@ -7,72 +7,51 @@ export const Group = () => {
   return (
     <section id="grupo" className="py-24 md:py-32 bg-cream">
       <div className="container mx-auto px-6">
-        <div className="grid lg:grid-cols-2 gap-16 items-center mb-16">
+        <div className="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-16">
           <div>
-            <p className="text-moss text-xs uppercase tracking-[0.25em] mb-4">
-              Estrutura — Grupo JB PRINT
-            </p>
-            <h2 className="font-display text-4xl md:text-5xl font-medium text-forest leading-[1.05] mb-6 text-balance">
-              GTPACK faz parte do{" "}
-              <span className="font-semibold">Grupo JB PRINT</span>
+            <div className="text-xs uppercase tracking-[0.25em] text-moss mb-4">— Estrutura</div>
+            <h2 className="font-display text-4xl md:text-6xl font-medium text-forest leading-[1.05] max-w-2xl text-balance">
+              GTPACK faz parte do Grupo JB PRINT.
             </h2>
-            <p className="text-foreground/80 leading-relaxed mb-6">
+            <p className="text-foreground/80 leading-relaxed mt-6 max-w-2xl">
               Somos a divisão de embalagens sustentáveis do Grupo JB PRINT, referência
-              nacional em impressão e conversão gráfica há mais de duas décadas. Essa
-              integração nos garante escala industrial, controle total de qualidade e
-              tecnologia de ponta — do papel certificado FSC ao produto final entregue
-              ao cliente.
+              nacional em impressão e conversão gráfica há mais de duas décadas. Mais
+              de 8.000 m² de parque fabril em Indaiatuba (SP), equipamentos offset
+              Heidelberg de última geração e um time apaixonado pelo que faz.
             </p>
-            <p className="text-foreground/80 leading-relaxed mb-8">
-              Mais de 8.000 m² de parque fabril em Indaiatuba (SP), equipamentos
-              offset Heidelberg de última geração e um time apaixonado pelo que faz.
-            </p>
-            <div className="bg-background rounded-xl inline-block px-6 py-4 border border-border/40">
-              <img src={logoJB} alt="JB PRINT Group" className="h-16 w-auto" />
-            </div>
           </div>
-          <div className="relative">
-            <img
-              src={fachada}
-              alt="Sede do Grupo JB PRINT em Indaiatuba"
-              className="w-full rounded-2xl shadow-2xl object-cover aspect-[4/3]"
-            />
-            <div className="absolute -bottom-6 -left-6 bg-forest text-primary-foreground rounded-xl px-6 py-4 shadow-xl">
-              <p className="text-3xl font-light">20+</p>
-              <p className="text-xs uppercase tracking-widest opacity-80">anos de mercado</p>
-            </div>
+          <div className="bg-background rounded-xl inline-block px-5 py-3 border border-border/40 shrink-0">
+            <img src={logoJB} alt="JB PRINT Group" className="h-12 w-auto" />
           </div>
         </div>
 
-        <div className="grid md:grid-cols-2 gap-6 mt-20">
-          <figure className="group overflow-hidden rounded-2xl shadow-lg">
-            <img
-              src={estrutura}
-              alt="Parque fabril com impressoras offset Heidelberg"
-              className="w-full h-72 object-cover transition-transform duration-700 group-hover:scale-105"
-            />
-            <figcaption className="bg-background p-6 border-t border-border/40">
-              <p className="text-moss text-xs uppercase tracking-[0.25em] mb-2">Parque fabril</p>
-              <h3 className="font-display text-xl font-semibold text-forest">Tecnologia offset de ponta</h3>
-              <p className="text-sm text-muted-foreground mt-1 leading-relaxed">
-                Impressoras Heidelberg multicor e linha completa de acabamento.
-              </p>
-            </figcaption>
-          </figure>
-          <figure className="group overflow-hidden rounded-2xl shadow-lg">
-            <img
-              src={equipe}
-              alt="Equipe do Grupo JB PRINT em frente à sede"
-              className="w-full h-72 object-cover object-bottom transition-transform duration-700 group-hover:scale-105"
-            />
-            <figcaption className="bg-background p-6 border-t border-border/40">
-              <p className="text-moss text-xs uppercase tracking-[0.25em] mb-2">Nosso time</p>
-              <h3 className="font-display text-xl font-semibold text-forest">Pessoas que fazem acontecer</h3>
-              <p className="text-sm text-muted-foreground mt-1 leading-relaxed">
-                Profissionais especializados em produção, qualidade e atendimento.
-              </p>
-            </figcaption>
-          </figure>
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+          {[
+            { img: fachada, name: "Sede própria em Indaiatuba", desc: "Edifício de 8.000 m² com infraestrutura completa de produção, logística e atendimento.", tag: "20+ anos", objectPos: "object-center" },
+            { img: estrutura, name: "Parque fabril Heidelberg", desc: "Impressoras offset multicor de última geração e linha completa de acabamento gráfico.", tag: "Tecnologia", objectPos: "object-center" },
+            { img: equipe, name: "Equipe especializada", desc: "Profissionais dedicados em produção, qualidade e atendimento ao cliente.", tag: "Nosso time", objectPos: "object-bottom" },
+          ].map((p) => (
+            <article
+              key={p.name}
+              className="group bg-background rounded-3xl overflow-hidden border border-border hover:shadow-elegant transition-all duration-500"
+            >
+              <div className="relative overflow-hidden aspect-[4/5]">
+                <img
+                  src={p.img}
+                  alt={p.name}
+                  loading="lazy"
+                  className={`w-full h-full object-cover ${p.objectPos} group-hover:scale-105 transition-transform duration-700`}
+                />
+                <span className="absolute top-4 left-4 bg-background/90 backdrop-blur px-3 py-1 rounded-full text-xs text-forest border border-border">
+                  {p.tag}
+                </span>
+              </div>
+              <div className="p-7">
+                <h3 className="font-display text-2xl font-semibold text-forest">{p.name}</h3>
+                <p className="text-muted-foreground mt-3 leading-relaxed">{p.desc}</p>
+              </div>
+            </article>
+          ))}
         </div>
       </div>
     </section>
