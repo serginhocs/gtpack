@@ -9,21 +9,21 @@ export const Group = () => {
       <div className="container mx-auto px-6">
         <div className="grid lg:grid-cols-2 gap-16 items-center mb-16">
           <div>
-            <p className="text-forest text-sm uppercase tracking-[0.3em] mb-4">
+            <p className="text-moss text-xs uppercase tracking-[0.25em] mb-4">
               Estrutura — Grupo JB PRINT
             </p>
-            <h2 className="text-4xl md:text-5xl font-light text-forest-deep leading-tight mb-6">
+            <h2 className="font-display text-4xl md:text-5xl font-medium text-forest leading-[1.05] mb-6 text-balance">
               GTPACK faz parte do{" "}
               <span className="font-semibold">Grupo JB PRINT</span>
             </h2>
-            <p className="text-foreground/70 leading-relaxed mb-6">
+            <p className="text-foreground/80 leading-relaxed mb-6">
               Somos a divisão de embalagens sustentáveis do Grupo JB PRINT, referência
               nacional em impressão e conversão gráfica há mais de duas décadas. Essa
               integração nos garante escala industrial, controle total de qualidade e
               tecnologia de ponta — do papel certificado FSC ao produto final entregue
               ao cliente.
             </p>
-            <p className="text-foreground/70 leading-relaxed mb-8">
+            <p className="text-foreground/80 leading-relaxed mb-8">
               Mais de 8.000 m² de parque fabril em Indaiatuba (SP), equipamentos
               offset Heidelberg de última geração e um time apaixonado pelo que faz.
             </p>
@@ -52,9 +52,9 @@ export const Group = () => {
               className="w-full h-72 object-cover transition-transform duration-700 group-hover:scale-105"
             />
             <figcaption className="bg-background p-6 border-t border-border/40">
-              <p className="text-forest text-xs uppercase tracking-[0.2em] mb-2">Parque fabril</p>
-              <h3 className="text-xl font-medium text-forest-deep">Tecnologia offset de ponta</h3>
-              <p className="text-sm text-foreground/60 mt-1">
+              <p className="text-moss text-xs uppercase tracking-[0.25em] mb-2">Parque fabril</p>
+              <h3 className="font-display text-xl font-semibold text-forest">Tecnologia offset de ponta</h3>
+              <p className="text-sm text-muted-foreground mt-1 leading-relaxed">
                 Impressoras Heidelberg multicor e linha completa de acabamento.
               </p>
             </figcaption>
@@ -66,9 +66,9 @@ export const Group = () => {
               className="w-full h-72 object-cover object-bottom transition-transform duration-700 group-hover:scale-105"
             />
             <figcaption className="bg-background p-6 border-t border-border/40">
-              <p className="text-forest text-xs uppercase tracking-[0.2em] mb-2">Nosso time</p>
-              <h3 className="text-xl font-medium text-forest-deep">Pessoas que fazem acontecer</h3>
-              <p className="text-sm text-foreground/60 mt-1">
+              <p className="text-moss text-xs uppercase tracking-[0.25em] mb-2">Nosso time</p>
+              <h3 className="font-display text-xl font-semibold text-forest">Pessoas que fazem acontecer</h3>
+              <p className="text-sm text-muted-foreground mt-1 leading-relaxed">
                 Profissionais especializados em produção, qualidade e atendimento.
               </p>
             </figcaption>
