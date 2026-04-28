@@ -1,4 +1,4 @@
-import { Leaf } from "lucide-react";
+import logo from "@/assets/logo-gtpack.jpg";
 
 export const Footer = () => {
   return (
@@ -6,23 +6,21 @@ export const Footer = () => {
       <div className="container mx-auto px-6">
         <div className="grid md:grid-cols-4 gap-12 pb-16 border-b border-primary-foreground/10">
           <div className="md:col-span-2">
-            <div className="flex items-center gap-2">
-              <div className="w-8 h-8 rounded-full bg-gradient-leaf flex items-center justify-center">
-                <Leaf className="w-4 h-4 text-primary-foreground" strokeWidth={2.5} />
-              </div>
-              <span className="font-display text-2xl font-semibold text-primary-foreground">Gtpack</span>
+            <div className="bg-primary-foreground rounded-xl inline-block p-3">
+              <img src={logo} alt="Gtpack" className="h-8 w-auto" />
             </div>
             <p className="mt-6 max-w-sm leading-relaxed">
-              Embalagens sustentáveis feitas com propósito. Para um mundo que merece ser embalado com cuidado.
+              Embalagens sustentáveis para o fast food. Do hambúrguer ao milkshake,
+              cada embalagem volta à terra como adubo.
             </p>
           </div>
           <div>
             <h4 className="text-primary-foreground font-semibold mb-4">Produtos</h4>
             <ul className="space-y-2 text-sm">
-              <li><a href="#" className="hover:text-leaf">Copos de papel</a></li>
-              <li><a href="#" className="hover:text-leaf">Caixas e marmitas</a></li>
-              <li><a href="#" className="hover:text-leaf">Sacolas kraft</a></li>
-              <li><a href="#" className="hover:text-leaf">Personalizados</a></li>
+              <li><a href="#" className="hover:text-leaf">Caixas de hambúrguer</a></li>
+              <li><a href="#" className="hover:text-leaf">Copos de bebida</a></li>
+              <li><a href="#" className="hover:text-leaf">Embalagens de fritas</a></li>
+              <li><a href="#" className="hover:text-leaf">Sacolas delivery</a></li>
             </ul>
           </div>
           <div>
