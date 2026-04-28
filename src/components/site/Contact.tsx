@@ -16,7 +16,7 @@ export const Contact = () => {
       <div className="container mx-auto px-6">
         <div className="max-w-3xl mb-16">
           <div className="text-xs uppercase tracking-[0.25em] text-moss mb-4">
-            — Fale com a Gtpack
+            — Fale com a GTPACK
           </div>
           <h2 className="font-display text-4xl md:text-6xl font-medium text-forest leading-[1.05] text-balance">
             Vamos embalar a sua operação?
@@ -119,7 +119,7 @@ export const Contact = () => {
             className="rounded-3xl overflow-hidden border border-border shadow-soft min-h-[460px] lg:min-h-full"
           >
             <iframe
-              title="Localização Gtpack — Indaiatuba"
+              title="Localização GTPACK — Indaiatuba"
               src={mapsEmbed}
               width="100%"
               height="100%"
