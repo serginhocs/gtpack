@@ -19,6 +19,17 @@ export default {
         ring: "hsl(var(--ring))",
         background: "hsl(var(--background))",
         foreground: "hsl(var(--foreground))",
+        cream: "hsl(var(--cream))",
+        kraft: {
+          DEFAULT: "hsl(var(--kraft))",
+          deep: "hsl(var(--kraft-deep))",
+        },
+        forest: {
+          DEFAULT: "hsl(var(--forest))",
+          deep: "hsl(var(--forest-deep))",
+        },
+        moss: "hsl(var(--moss))",
+        leaf: "hsl(var(--leaf))",
         primary: {
           DEFAULT: "hsl(var(--primary))",
           foreground: "hsl(var(--primary-foreground))",
