@@ -13,6 +13,7 @@ export const Navbar = () => {
           <li><a href="#produtos" className="hover:text-forest transition-colors">Produtos</a></li>
           <li><a href="#sustentabilidade" className="hover:text-forest transition-colors">Sustentabilidade</a></li>
           <li><a href="#processo" className="hover:text-forest transition-colors">Processo</a></li>
+          <li><a href="#contato" className="hover:text-forest transition-colors">Contato</a></li>
         </ul>
         <Button className="bg-forest hover:bg-forest-deep text-primary-foreground rounded-full px-6">
           Solicitar orçamento
