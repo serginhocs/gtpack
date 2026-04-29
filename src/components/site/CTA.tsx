@@ -11,9 +11,11 @@ export const CTA = () => {
         <p className="text-primary-foreground/80 text-lg mt-6 max-w-xl mx-auto">
           Solicite um orçamento personalizado e receba amostras gratuitas dos nossos produtos.
         </p>
-        <Button size="lg" className="mt-10 bg-background text-forest hover:bg-cream rounded-full h-14 px-10 text-base group">
-          Começar agora
-          <ArrowRight className="ml-2 w-4 h-4 group-hover:translate-x-1 transition-transform" />
+        <Button asChild size="lg" className="mt-10 bg-background text-forest hover:bg-cream rounded-full h-14 px-10 text-base group">
+          <a href="mailto:contato@gtpack.com.br?subject=Quero%20começar%20agora">
+            Começar agora
+            <ArrowRight className="ml-2 w-4 h-4 group-hover:translate-x-1 transition-transform" />
+          </a>
         </Button>
       </div>
     </section>
