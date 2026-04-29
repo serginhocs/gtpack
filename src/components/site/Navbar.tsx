@@ -16,8 +16,10 @@ export const Navbar = () => {
           <li><a href="#grupo" className="hover:text-forest transition-colors">Grupo</a></li>
           <li><a href="#contato" className="hover:text-forest transition-colors">Contato</a></li>
         </ul>
-        <Button className="bg-forest hover:bg-forest-deep text-primary-foreground rounded-full px-6">
-          Solicitar orçamento
+        <Button asChild className="bg-forest hover:bg-forest-deep text-primary-foreground rounded-full px-6">
+          <a href="mailto:contato@gtpack.com.br?subject=Solicitação%20de%20orçamento">
+            Solicitar orçamento
+          </a>
         </Button>
       </nav>
     </header>
