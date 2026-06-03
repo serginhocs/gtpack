@@ -34,7 +34,7 @@ export const Footer = () => {
             </ul>
           </div>
         </div>
-        <div className="pt-8 flex flex-col md:flex-row justify-between gap-4 text-xs text-primary-foreground/50">
+        <div className="pt-8 flex flex-col md:flex-row justify-between gap-4 text-xs text-primary-foreground/80">
           <p>© 2026 GTPACK. Todos os direitos reservados.</p>
           <p>Feito com fibra renovável 🌱</p>
         </div>
