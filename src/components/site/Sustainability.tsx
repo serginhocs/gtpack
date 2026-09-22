@@ -30,7 +30,7 @@ export const Sustainability = () => {
               className="border-t border-primary-foreground/20 pt-6"
             >
               <div className="font-display text-5xl md:text-6xl font-medium text-leaf">{s.n}</div>
-              <div className="text-sm mt-3 text-primary-foreground/90">{s.l}</div>
+              <div className="text-sm mt-3 text-primary-foreground/70">{s.l}</div>
             </motion.div>
           ))}
         </div>

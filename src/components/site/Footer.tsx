@@ -7,7 +7,7 @@ export const Footer = () => {
         <div className="grid md:grid-cols-4 gap-12 pb-16 border-b border-primary-foreground/10">
           <div className="md:col-span-2">
             <div className="bg-primary-foreground rounded-xl inline-block px-5 py-3">
-              <img src={logo} alt="GTPACK — Embalagens Sustentáveis" className="h-12 w-auto" />
+              <img src={logo} alt="GTPACK" className="h-12 w-auto" />
             </div>
             <p className="mt-6 max-w-sm leading-relaxed">
               Embalagens sustentáveis para o fast food. Do hambúrguer ao milkshake,
@@ -28,13 +28,13 @@ export const Footer = () => {
             <h4 className="text-primary-foreground font-semibold mb-4">Contato</h4>
             <ul className="space-y-2 text-sm">
               <li>contato@gtpack.com.br</li>
-              <li>(19) 3935-0463</li>
-              <li>R. Euclides Peres, 175</li>
-              <li>Indaiatuba — SP, 13347-452</li>
+              <li>(19) 3934-0463</li>
+              <li>R. Maria Aparecida de Oliveira, 73</li>
+              <li>Indaiatuba — SP</li>
             </ul>
           </div>
         </div>
-        <div className="pt-8 flex flex-col md:flex-row justify-between gap-4 text-xs text-primary-foreground/80">
+        <div className="pt-8 flex flex-col md:flex-row justify-between gap-4 text-xs text-primary-foreground/50">
           <p>© 2026 GTPACK. Todos os direitos reservados.</p>
           <p>Feito com fibra renovável 🌱</p>
         </div>
