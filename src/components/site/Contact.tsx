@@ -95,7 +95,9 @@ export const Contact = () => {
                     Atendimento
                   </h3>
                   <p className="text-muted-foreground mt-1 leading-relaxed">
-                    Segunda a sexta — 8h às 18h
+                    Segunda a quinta — 7:15h às 17h
+                    <br />
+                    Sexta-feira — 7:15h às 16h
                   </p>
                 </div>
               </div>
