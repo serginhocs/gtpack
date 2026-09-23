@@ -29,8 +29,8 @@ export const Footer = () => {
             <ul className="space-y-2 text-sm">
               <li>contato@gtpack.com.br</li>
               <li>(19) 3935-0463</li>
-              <li>Rua Euclides Peres, 175</li>
-              <li>Indaiatuba/SP — CEP: 13.347-452</li>
+              <li>Rua Euclides Peres, 175 - Distrito Industrial de Micro e Pequena</li>
+              <li>Empresa - Dimpe II - Indaiatuba/SP - CEP: 13347-452</li>
             </ul>
           </div>
         </div>
