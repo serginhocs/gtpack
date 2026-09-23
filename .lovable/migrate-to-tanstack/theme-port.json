@@ -1,8 +1,0 @@
-{
-  "customizations": [
-    { "token": "brand color tokens", "source": "src/index.css", "reappliedIn": "src/styles.css" },
-    { "token": "gradient utilities", "source": "src/index.css", "reappliedIn": "src/styles.css" },
-    { "token": "shadow utilities", "source": "src/index.css", "reappliedIn": "src/styles.css" },
-    { "token": "font families", "source": "src/index.css", "reappliedIn": "src/styles.css" }
-  ]
-}
