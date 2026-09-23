@@ -61,10 +61,10 @@ export const Contact = () => {
                     Telefone
                   </h3>
                   <a
-                    href="tel:+551939340463"
+                    href="tel:+551939350463"
                     className="text-muted-foreground mt-1 leading-relaxed hover:text-moss transition-colors block"
                   >
-                    (19) 3934-0463
+                    (19) 3935-0463
                   </a>
                 </div>
               </div>
@@ -95,7 +95,9 @@ export const Contact = () => {
                     Atendimento
                   </h3>
                   <p className="text-muted-foreground mt-1 leading-relaxed">
-                    Segunda a sexta — 8h às 18h
+                    Segunda a quinta — 7:15h às 17h
+                    <br />
+                    Sexta-feira — 7:15h às 16h
                   </p>
                 </div>
               </div>

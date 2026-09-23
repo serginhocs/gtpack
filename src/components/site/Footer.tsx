@@ -28,7 +28,7 @@ export const Footer = () => {
             <h4 className="text-primary-foreground font-semibold mb-4">Contato</h4>
             <ul className="space-y-2 text-sm">
               <li>contato@gtpack.com.br</li>
-              <li>(19) 3934-0463</li>
+              <li>(19) 3935-0463</li>
               <li>R. Maria Aparecida de Oliveira, 73</li>
               <li>Indaiatuba — SP</li>
             </ul>
