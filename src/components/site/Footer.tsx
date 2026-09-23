@@ -29,8 +29,8 @@ export const Footer = () => {
             <ul className="space-y-2 text-sm">
               <li>contato@gtpack.com.br</li>
               <li>(19) 3935-0463</li>
-              <li>R. Maria Aparecida de Oliveira, 73</li>
-              <li>Indaiatuba — SP</li>
+              <li>R. Euclides Peres, 175</li>
+              <li>Indaiatuba — SP, 13347-452</li>
             </ul>
           </div>
         </div>
