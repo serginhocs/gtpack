@@ -23,7 +23,8 @@ export function useNavigate(): NavigateFn {
   return useCallback((to: string | number, options?: NavigateOptions) => {
     if (typeof to === "number") { router.history.go(to); return; }
     const { pathname, search, hash } = parseTo(to);
-    void tsNav({ to: pathname, search: search as never, hash, state: options?.state as never, replace: options?.replace });
+    const navOptions = { to: pathname, ...(search ? { search } : {}), ...(hash ? { hash } : {}), ...(options?.state ? { state: options.state } : {}), ...(options?.replace !== undefined ? { replace: options.replace } : {}) };
+    void tsNav(navOptions as never);
   }, [tsNav, router]) as NavigateFn;
 }
 
@@ -39,12 +40,14 @@ export function useParams<T extends Record<string, string | undefined> = Record<
 type LinkProps = Omit<ComponentProps<typeof TSLink>, "to"> & { to: string; replace?: boolean; state?: unknown; children?: ReactNode };
 export const Link = forwardRef<HTMLAnchorElement, LinkProps>(function Link({ to, replace, state, children, ...rest }, ref) {
   const { pathname, search, hash } = parseTo(to);
-  return <TSLink ref={ref as never} to={pathname as never} search={search as never} hash={hash} replace={replace} state={state as never} {...((rest ?? {}) as Record<string, unknown>)}>{children}</TSLink>;
+  const linkOptions = { to: pathname, ...(search ? { search } : {}), ...(hash ? { hash } : {}), ...(replace !== undefined ? { replace } : {}), ...(state ? { state } : {}) };
+  return <TSLink ref={ref as never} {...(linkOptions as never)} {...((rest ?? {}) as Record<string, unknown>)}>{children}</TSLink>;
 });
 
 export function Navigate({ to, replace, state }: { to: string; replace?: boolean; state?: unknown }) {
   const { pathname, search, hash } = parseTo(to);
-  return <TSNavigate to={pathname as never} search={search as never} hash={hash} state={state as never} replace={replace} />;
+  const navigateOptions = { to: pathname, ...(search ? { search } : {}), ...(hash ? { hash } : {}), ...(replace !== undefined ? { replace } : {}), ...(state ? { state } : {}) };
+  return <TSNavigate {...(navigateOptions as never)} />;
 }
 
 export const Outlet = TSOutlet;
