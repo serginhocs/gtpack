@@ -7,7 +7,7 @@ import {
   Navigate as TSNavigate,
   Outlet as TSOutlet,
 } from "@tanstack/react-router";
-import { useMemo, useCallback, forwardRef, type ComponentProps, type ReactNode } from "react";
+import { useMemo, useCallback, forwardRef, createElement, type ComponentProps, type ReactNode } from "react";
 
 function parseTo(to: string): { pathname: string; search?: Record<string, string>; hash?: string } {
   const [beforeHash = "", hashStr] = (to ?? "").split("#");
@@ -41,13 +41,13 @@ type LinkProps = Omit<ComponentProps<typeof TSLink>, "to"> & { to: string; repla
 export const Link = forwardRef<HTMLAnchorElement, LinkProps>(function Link({ to, replace, state, children, ...rest }, ref) {
   const { pathname, search, hash } = parseTo(to);
   const linkOptions = { to: pathname, ...(search ? { search } : {}), ...(hash ? { hash } : {}), ...(replace !== undefined ? { replace } : {}), ...(state ? { state } : {}) };
-  return <TSLink ref={ref as never} {...(linkOptions as never)} {...((rest ?? {}) as Record<string, unknown>)}>{children}</TSLink>;
+  return createElement(TSLink, { ref, ...linkOptions, ...rest } as never, children);
 });
 
 export function Navigate({ to, replace, state }: { to: string; replace?: boolean; state?: unknown }) {
   const { pathname, search, hash } = parseTo(to);
   const navigateOptions = { to: pathname, ...(search ? { search } : {}), ...(hash ? { hash } : {}), ...(replace !== undefined ? { replace } : {}), ...(state ? { state } : {}) };
-  return <TSNavigate {...(navigateOptions as never)} />;
+  return createElement(TSNavigate, navigateOptions as never);
 }
 
 export const Outlet = TSOutlet;
