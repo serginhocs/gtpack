@@ -3,7 +3,7 @@ import { MapPin, Phone, Mail, Clock } from "lucide-react";
 
 export const Contact = () => {
   const address =
-    "Rua Maria Aparecida de Oliveira, 73 - Loteamento Comercial Monte Castelo, Indaiatuba - SP";
+    "R. Euclides Peres, 175, Indaiatuba - SP, 13347-452";
   const mapsEmbed = `https://www.google.com/maps?q=${encodeURIComponent(
     address
   )}&output=embed`;
@@ -45,9 +45,8 @@ export const Contact = () => {
                     Endereço
                   </h3>
                   <p className="text-muted-foreground mt-1 leading-relaxed">
-                    Rua Maria Aparecida de Oliveira, 73<br />
-                    Loteamento Comercial Monte Castelo<br />
-                    Indaiatuba — SP
+                    R. Euclides Peres, 175<br />
+                    Indaiatuba — SP, 13347-452
                   </p>
                 </div>
               </div>
@@ -97,7 +96,7 @@ export const Contact = () => {
                   <p className="text-muted-foreground mt-1 leading-relaxed">
                     Segunda a quinta — 7:15h às 17h
                     <br />
-                    Sexta-feira — 7:15h às 16h
+                    Sexta — 7:15h às 16h
                   </p>
                 </div>
               </div>
