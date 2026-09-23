@@ -4,11 +4,12 @@ import { MapPin, Phone, Mail, Clock } from "lucide-react";
 export const Contact = () => {
   const address =
     "Rua Euclides Peres, 175 - Distrito Industrial de Micro e Pequena Empresa - DIMPE II - Indaiatuba/SP - CEP: 13.347-452";
+  const mapSearch = `GT PACK, ${address}`;
   const mapsEmbed = `https://www.google.com/maps?q=${encodeURIComponent(
-    address
+    mapSearch
   )}&output=embed`;
   const mapsLink = `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(
-    address
+    mapSearch
   )}`;
 
   return (
