@@ -3,7 +3,7 @@ import { MapPin, Phone, Mail, Clock } from "lucide-react";
 
 export const Contact = () => {
   const address =
-    "R. Euclides Peres, 175, Indaiatuba - SP, 13347-452";
+    "Rua Euclides Peres, 175 - Distrito Industrial de Micro e Pequena Empresa - DIMPE II - Indaiatuba/SP - CEP: 13.347-452";
   const mapsEmbed = `https://www.google.com/maps?q=${encodeURIComponent(
     address
   )}&output=embed`;
@@ -45,8 +45,9 @@ export const Contact = () => {
                     Endereço
                   </h3>
                   <p className="text-muted-foreground mt-1 leading-relaxed">
-                    R. Euclides Peres, 175<br />
-                    Indaiatuba — SP, 13347-452
+                    Rua Euclides Peres, 175<br />
+                    Distrito Industrial de Micro e Pequena Empresa — DIMPE II<br />
+                    Indaiatuba/SP — CEP: 13.347-452
                   </p>
                 </div>
               </div>
