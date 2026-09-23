@@ -61,10 +61,10 @@ export const Contact = () => {
                     Telefone
                   </h3>
                   <a
-                    href="tel:+551939350463"
+                    href="tel:+551939340463"
                     className="text-muted-foreground mt-1 leading-relaxed hover:text-moss transition-colors block"
                   >
-                    (19) 3935-0463
+                    (19) 3934-0463
                   </a>
                 </div>
               </div>
