@@ -16,7 +16,7 @@ export const Group = () => {
             <p className="text-foreground/80 leading-relaxed mt-6 max-w-2xl">
               Somos a divisão de embalagens sustentáveis do Grupo JB PRINT, referência
               nacional em impressão e conversão gráfica há mais de duas décadas. Mais
-              de 8.000 m² de parque fabril em Indaiatuba (SP), equipamentos offset
+               de 1.200 m² de parque fabril em Indaiatuba (SP), equipamentos offset
               Heidelberg de última geração e um time apaixonado pelo que faz.
             </p>
           </div>
@@ -27,7 +27,7 @@ export const Group = () => {
 
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
           {[
-            { img: fachada, name: "Sede própria em Indaiatuba", desc: "Edifício de 8.000 m² com infraestrutura completa de produção, logística e atendimento.", tag: "20+ anos", objectPos: "object-bottom" },
+             { img: fachada, name: "Sede própria em Indaiatuba", desc: "Edifício de 1.200 m² com infraestrutura completa de produção, logística e atendimento.", tag: "20+ anos", objectPos: "object-bottom" },
             { img: estrutura, name: "Parque fabril Heidelberg", desc: "Impressoras offset multicor de última geração e linha completa de acabamento gráfico.", tag: "Tecnologia", objectPos: "object-center" },
             { img: equipe, name: "Equipe especializada", desc: "Profissionais dedicados em produção, qualidade e atendimento ao cliente.", tag: "Nosso time", objectPos: "object-bottom" },
           ].map((p) => (
